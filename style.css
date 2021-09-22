@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --primary: #f75d34;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 400vh;
+}
+.container{
+    /* max-width: 1152px; */
+    padding: 0 50px;
+    margin: 0 auto;
+}
+/* .btn{
+    padding: 10px 15px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+} */
+
+/* Header */
+header .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    padding: 0px 44px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+header .top .left input{
+    margin-left: 52px;
+    border: 1px solid rgba(36,39,44,.3);
+    background: #fafafa;
+    color: rgba(36,39,44,.5);
+    border-radius: 4px;
+    font-size: 10px;
+    height: 28px;
+    width: 299px;
+    padding: 0 12px;
+}
+header .top .left{
+    display: flex;
+    align-items: center;
+}
+header .top .left img {
+    width: 174px;
+    padding: 14px 0px;
+}
+header .top .search{
+    display: flex;
+    align-items: center;
+}
+
+header .top .search input {
+    border-radius: 5px 0px 0px 5px;
+    width: 427px;
+    margin-left: -107px;
+    font-size: 14px;
+    align-items: center;
+    border: navajowhite;
+    background: #f7f7f7;
+    color: #24272c;
+    padding: 16px;
+    box-shadow: 2px -1px 47px -37px rgb(0 0 0 / 75%) inset;
+}
+header .top .search button{
+    color: #f7f7f7;
+    background: #24272c;
+    padding: 17px 25px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+}
+header .top .right{
+    display: flex;
+    align-items: center;
+}
+header .top .right .lan{
+    font-size: 12px;
+    margin-right: 35px;
+}
+header .top .right .login i{
+    margin-right: 10px;
+}
+header .top .right .login a{
+    text-decoration: none;
+    font-size: 15px;
+}
+header .top2{
+    box-shadow: 1px 2px 5px -1px rgba(115,115,115,0.75);
+    position: sticky;
+    top: 0;
+}
+header .top2 nav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+header .top2 nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 17px 0px;
+    margin-left: 7px;
+}
+header .top2 nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: rgb(0 0 0 / 58%);
+}
+header .top2 nav ul li{
+    margin-left: 30px;
+}
+header .top2 nav .select p{
+    color: rgb(0 0 0 / 58%);
+    margin-right: 66px;
+    font-size: 15px;
+}
+header .top2 nav .select i{
+    margin-right: 5px;
+}
+
+header .desktop-b{
+    position: relative;
+    background: url(./images/Desktop-Banner.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    margin-top: 10px;
+}
+header .desktop-b .find{
+    position: absolute;
+    top: 54px;
+    left: 90px;
+    width: 348px;
+    height: 443px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 20px 0px rgb(36 39 44 / 30%);
+    padding: 19px 24px;
+}
+header .desktop-b .find h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+header .desktop-b .find ul{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+header .desktop-b .find ul li{
+    width: 144px;
+    height: 47px;
+    border: 1px solid rgba(36,39,44,.5);
+    border-radius: 4px;
+    padding: 0;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 46px;
+    font-weight: 500;
+}
+header .desktop-b .find ul li.blc{
+    background: #24272c;
+    color: #f7f7f7;
+}
+header .desktop-b .find .option{
+    display: flex;
+    margin: 20px 0px;
+}
+header .desktop-b .find .option i{
+    color: var(--primary);
+}
+header .desktop-b .find .option i.frst{
+    margin-left: 50px;
+    color: black;
+}
+header .desktop-b .find .option p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+header .desktop-b .find .option p.frst{
+    color: var(--primary);
+}
+header .desktop-b .find .input input{
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    margin-top: 15px;
+    border: 1px solid rgba(31, 25, 25, 0.151);
+}
+header .desktop-b .find button{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    background:var(--primary);
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s ease all;
+}
+header .desktop-b .find button:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+/* Section Recommended cars */
+section.recommended{
+    width: 100%;
+    background: rgba(43, 43, 43, 0.041);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+section.recommended .contain{
+    width: 90%;
+    background: #fff;
+}
+section.recommended .contain p.pn{
+    margin-top: 68px;
+    color: var(--primary);
+}
+section.recommended .contain h1{
+    font-weight: 500;
+}
+section.recommended .contain .carts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+}
+section.recommended .contain .carts .r-cart{
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    margin-top: 15px;
+}
+section.recommended .contain .carts .r-cart img{
+    width: 100%;
+}
+section.recommended .contain .carts .r-cart 
